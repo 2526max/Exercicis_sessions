@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="login.php" method="post">
+        <div class="form-group">
+          <label for="user">Usuario:</label>
+          <br />
+          <input
+            type="text"
+            placeholder="Ingresa tu usuario"
+            id="user"
+            name="user"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pass">Contraseña:</label>
+          <br />
+          <input
+            type="password"
+            placeholder="Introduce tu clave"
+            id="pass"
+            name="pass"
+            required
+          />
+          <br />
+        </div>
+        <button type="submit">Acceder</button>
+      </form>
+    </div>
+  </body>
+</html>

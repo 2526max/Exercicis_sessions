@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Café Gourmet</title>
+</head>
+<body>
+    <header>
+        <h1>☕ Café Gourmet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cistella_compra.php">Cesta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h2>Catálogo de productos</h2>
+        
+        <form method="POST" action="cistella_compra.php">
+            <div>
+                <h3>Café Arábica Premium</h3>
+                <p>Disfruta de un aroma intenso y notas frutales con nuestro grano seleccionado de las montañas de Etiopía.</p>
+                <p>15€</p>
+                <input type="hidden" name="prod" value="ARABICA">
+                <input type="hidden" value="15" name="preu">
+                <label>Cantidad:</label>
+                <input type="number" name="quant" min="1" value="1">
+                <button type="submit">Añadir a la cesta</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <form method="POST" action="cistella_compra.php">
+            <div>
+                <h3>Café Robusta Intenso</h3>
+                <p>Un sabor fuerte y con cuerpo, ideal para despertar tus mañanas con un espresso cargado de energía.</p>
+                <p>10€</p>
+                <input type="hidden" name="prod" value="ROBUSTA">
+                <input type="hidden" value="10" name="preu">
+                <label>Cantidad:</label>
+                <input type="number" name="quant" min="1" value="1">
+                <button type="submit">Añadir a la cesta</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
